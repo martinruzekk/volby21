@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    expose:
+      - 80
+    ports:
+      - 8080:80
+    volumes:
+      - .:/var/www/html
+    environment:
+      APACHE_DOCUMENT_ROOT: /var/www/html

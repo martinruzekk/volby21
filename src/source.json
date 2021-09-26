@@ -1,0 +1,1273 @@
+{
+    "cr": {
+        "ucast": {
+            "okrsky": 14886,
+            "zpracovano": 0,
+            "zpracovano_prc": 0,
+            "ucast": 0
+        },
+        "spolu": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+        },
+        "pistan": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": 0
+        },
+        "ano": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "ANO 2011"
+        },
+        "spd": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "Svoboda a p\u0159\u00edm\u00e1 demokracie (SPD)"
+        },
+        "kscm": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "Koruna \u010cesk\u00e1 (monarch.str.\u010cech, Moravy a Slezska)"
+        },
+        "cssd": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "\u010cesk\u00e1 strana soci\u00e1ln\u011b demokratick\u00e1"
+        },
+        "prisaha": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "P\u0158\u00cdSAHA - ob\u010dansk\u00e9 hnut\u00ed Roberta \u0160lachty"
+        },
+        "tss": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "Trikolora Svobodn\u00ed Soukromn\u00edci"
+        },
+        "zeleni": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "Strana zelen\u00fdch"
+        },
+        "volny": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "VOLN\u00dd blok"
+        }
+    },
+    "kraj": {
+        "ucast": {
+            "okrsky": 345,
+            "zpracovano": 0,
+            "zpracovano_prc": 0,
+            "ucast": 0
+        },
+        "spolu": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+        },
+        "pistan": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "PIR\u00c1TI a STAROSTOV\u00c9"
+        },
+        "ano": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "ANO 2011"
+        },
+        "spd": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "Svoboda a p\u0159\u00edm\u00e1 demokracie (SPD)"
+        },
+        "kscm": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "Komunistick\u00e1 strana \u010cech a Moravy"
+        },
+        "cssd": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "\u010cesk\u00e1 strana soci\u00e1ln\u011b demokratick\u00e1"
+        },
+        "prisaha": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "P\u0158\u00cdSAHA - ob\u010dansk\u00e9 hnut\u00ed Roberta \u0160lachty"
+        },
+        "tss": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "Trikolora Svobodn\u00ed Soukromn\u00edci"
+        },
+        "zeleni": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "Strana zelen\u00fdch"
+        },
+        "volny": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "VOLN\u00dd blok"
+        }
+    },
+    "okresKV": {
+        "ucast": {
+            "okrsky": 141,
+            "zpracovano": 0,
+            "zpracovano_prc": 0,
+            "ucast": 0
+        },
+        "spolu": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+        },
+        "pistan": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "PIR\u00c1TI a STAROSTOV\u00c9"
+        },
+        "ano": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "ANO 2011"
+        },
+        "spd": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "Svoboda a p\u0159\u00edm\u00e1 demokracie (SPD)"
+        },
+        "kscm": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "Komunistick\u00e1 strana \u010cech a Moravy"
+        },
+        "cssd": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "\u010cesk\u00e1 strana soci\u00e1ln\u011b demokratick\u00e1"
+        },
+        "prisaha": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "P\u0158\u00cdSAHA - ob\u010dansk\u00e9 hnut\u00ed Roberta \u0160lachty"
+        },
+        "tss": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "Trikolora Svobodn\u00ed Soukromn\u00edci"
+        },
+        "zeleni": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "Strana zelen\u00fdch"
+        },
+        "volny": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "VOLN\u00dd blok"
+        }
+    },
+    "okresCheb": {
+        "ucast": {
+            "okrsky": 112,
+            "zpracovano": 0,
+            "zpracovano_prc": 0,
+            "ucast": 0
+        },
+        "spolu": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+        },
+        "pistan": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "PIR\u00c1TI a STAROSTOV\u00c9"
+        },
+        "ano": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "ANO 2011"
+        },
+        "spd": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "Svoboda a p\u0159\u00edm\u00e1 demokracie (SPD)"
+        },
+        "kscm": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "Komunistick\u00e1 strana \u010cech a Moravy"
+        },
+        "cssd": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "\u010cesk\u00e1 strana soci\u00e1ln\u011b demokratick\u00e1"
+        },
+        "prisaha": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "P\u0158\u00cdSAHA - ob\u010dansk\u00e9 hnut\u00ed Roberta \u0160lachty"
+        },
+        "tss": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "Trikolora Svobodn\u00ed Soukromn\u00edci"
+        },
+        "zeleni": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "Strana zelen\u00fdch"
+        },
+        "volny": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "VOLN\u00dd blok"
+        }
+    },
+    "okresSok": {
+        "ucast": {
+            "okrsky": 92,
+            "zpracovano": 0,
+            "zpracovano_prc": 0,
+            "ucast": 0
+        },
+        "spolu": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+        },
+        "pistan": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "PIR\u00c1TI a STAROSTOV\u00c9"
+        },
+        "ano": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "ANO 2011"
+        },
+        "spd": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "Svoboda a p\u0159\u00edm\u00e1 demokracie (SPD)"
+        },
+        "kscm": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "Komunistick\u00e1 strana \u010cech a Moravy"
+        },
+        "cssd": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "\u010cesk\u00e1 strana soci\u00e1ln\u011b demokratick\u00e1"
+        },
+        "prisaha": null,
+        "tss": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "Trikolora Svobodn\u00ed Soukromn\u00edci"
+        },
+        "zeleni": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "Strana zelen\u00fdch"
+        },
+        "volny": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "VOLN\u00dd blok"
+        }
+    },
+    "vary": {
+        "nazev": "Karlovy Vary",
+        "ucast": {
+            "okrsky": 51,
+            "zpracovano": 0,
+            "zpracovano_prc": 0,
+            "ucast": 0
+        },
+        "strany": {
+            "spolu": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "pis": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "ano": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "spd": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "kscm": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "cssd": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "prisaha": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "zeleni": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "tss": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "volny": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            }
+        }
+    },
+    "cheb": {
+        "nazev": "Cheb",
+        "ucast": {
+            "okrsky": 32,
+            "zpracovano": 0,
+            "zpracovano_prc": 0,
+            "ucast": 0
+        },
+        "strany": {
+            "spolu": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "pis": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "ano": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "spd": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "kscm": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "cssd": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "prisaha": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "zeleni": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "tss": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "volny": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            }
+        }
+    },
+    "sokolov": {
+        "nazev": "Sokolov",
+        "ucast": {
+            "okrsky": 19,
+            "zpracovano": 0,
+            "zpracovano_prc": 0,
+            "ucast": 0
+        },
+        "strany": {
+            "spolu": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "pis": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "ano": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "spd": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "kscm": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "cssd": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "prisaha": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "zeleni": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "tss": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "volny": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            }
+        }
+    },
+    "zlutice": {
+        "nazev": "\u017dlutice",
+        "ucast": {
+            "okrsky": 2,
+            "zpracovano": 0,
+            "zpracovano_prc": 0,
+            "ucast": 0
+        },
+        "strany": {
+            "spolu": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "pis": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "ano": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "spd": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "kscm": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "cssd": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "prisaha": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "zeleni": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "tss": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "volny": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            }
+        }
+    },
+    "ostrov": {
+        "nazev": "Ostrov",
+        "ucast": {
+            "okrsky": 14,
+            "zpracovano": 0,
+            "zpracovano_prc": 0,
+            "ucast": 0
+        },
+        "strany": {
+            "spolu": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "pis": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "ano": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "spd": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "kscm": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "cssd": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "prisaha": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "zeleni": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "tss": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            },
+            "volny": {
+                "hlasy": 0,
+                "prc": 0,
+                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+            }
+        }
+    },
+    "lidiSpolu": {
+        "1": {
+            "titul": "Ing.",
+            "jmeno": "Jan",
+            "prijmeni": "Bure\u0161",
+            "poradoveCislo": "1",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "2": {
+            "titul": "Bc.",
+            "jmeno": "Luk\u00e1\u0161",
+            "prijmeni": "Otys",
+            "poradoveCislo": "2",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "3": {
+            "titul": null,
+            "jmeno": "O\u013ega",
+            "prijmeni": "Hal\u00e1kov\u00e1",
+            "poradoveCislo": "3",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "4": {
+            "titul": "Ing. Bc.",
+            "jmeno": "Romana",
+            "prijmeni": "Mare\u010dkov\u00e1",
+            "poradoveCislo": "4",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "5": {
+            "titul": "Mgr.",
+            "jmeno": "Petr",
+            "prijmeni": "Mach",
+            "poradoveCislo": "5",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "6": {
+            "titul": "Mgr. Bc.",
+            "jmeno": "V\u00e1clav",
+            "prijmeni": "Slav\u00edk",
+            "poradoveCislo": "6",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "7": {
+            "titul": "Ing.",
+            "jmeno": "Karel",
+            "prijmeni": "Jakobec",
+            "poradoveCislo": "7",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "8": {
+            "titul": null,
+            "jmeno": "Igor",
+            "prijmeni": "Adamovi\u010d",
+            "poradoveCislo": "8",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "9": {
+            "titul": "Ing.",
+            "jmeno": "Marek",
+            "prijmeni": "Poledn\u00ed\u010dek",
+            "poradoveCislo": "9",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "10": {
+            "titul": "Ing.",
+            "jmeno": "Michal",
+            "prijmeni": "Posp\u00ed\u0161il",
+            "poradoveCislo": "10",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "11": {
+            "titul": null,
+            "jmeno": "Karel",
+            "prijmeni": "Henych",
+            "poradoveCislo": "11",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "12": {
+            "titul": null,
+            "jmeno": "Marie",
+            "prijmeni": "\u0160a\u0161kov\u00e1",
+            "poradoveCislo": "12",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "13": {
+            "titul": "Mgr.",
+            "jmeno": "Petr",
+            "prijmeni": "\u0160indel\u00e1\u0159",
+            "poradoveCislo": "13",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "14": {
+            "titul": "Bc.",
+            "jmeno": "Kate\u0159ina",
+            "prijmeni": "Maru\u017e\u00e1nov\u00e1",
+            "poradoveCislo": "14",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        }
+    },
+    "lidiPistan": {
+        "1": {
+            "titul": "Ing.",
+            "jmeno": "Petr",
+            "prijmeni": "T\u0159e\u0161\u0148\u00e1k",
+            "poradoveCislo": "1",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "2": {
+            "titul": null,
+            "jmeno": "Jan",
+            "prijmeni": "Kucha\u0159",
+            "poradoveCislo": "2",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "3": {
+            "titul": "Mgr.",
+            "jmeno": "V\u00edt\u011bzslav",
+            "prijmeni": "Adamec",
+            "poradoveCislo": "3",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "4": {
+            "titul": "Mgr.",
+            "jmeno": "Ji\u0159\u00ed",
+            "prijmeni": "Kls\u00e1k",
+            "poradoveCislo": "4",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "5": {
+            "titul": "Mgr.",
+            "jmeno": "Nikola",
+            "prijmeni": "Kassl",
+            "poradoveCislo": "5",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "6": {
+            "titul": "Ing.",
+            "jmeno": "Petr",
+            "prijmeni": "Kr\u00e1sa",
+            "poradoveCislo": "6",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "7": {
+            "titul": "Ing.",
+            "jmeno": "Bohdan",
+            "prijmeni": "Van\u011bk",
+            "poradoveCislo": "7",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "8": {
+            "titul": null,
+            "jmeno": "\u0160t\u011bp\u00e1n",
+            "prijmeni": "Jav\u016frek",
+            "poradoveCislo": "8",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "9": {
+            "titul": "Bc.",
+            "jmeno": "Josef",
+            "prijmeni": "Pavlovic",
+            "poradoveCislo": "9",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "10": {
+            "titul": "Mgr.",
+            "jmeno": "Mark\u00e9ta",
+            "prijmeni": "Ma\u0161kov\u00e1",
+            "poradoveCislo": "10",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "11": {
+            "titul": null,
+            "jmeno": "Daniela",
+            "prijmeni": "B\u00edl\u00e1",
+            "poradoveCislo": "11",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "12": {
+            "titul": "MUDr.",
+            "jmeno": "Karel",
+            "prijmeni": "Tyrpekl",
+            "poradoveCislo": "12",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "13": {
+            "titul": null,
+            "jmeno": "Mark\u00e9ta",
+            "prijmeni": "Monsportov\u00e1",
+            "poradoveCislo": "13",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "14": {
+            "titul": "Ing.",
+            "jmeno": "Petra",
+            "prijmeni": "Gaji\u010dov\u00e1",
+            "poradoveCislo": "14",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        }
+    },
+    "lidiAno": {
+        "1": {
+            "titul": "Mgr.",
+            "jmeno": "Jana",
+            "prijmeni": "Mra\u010dkov\u00e1 Vildumetzov\u00e1",
+            "poradoveCislo": "1",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "2": {
+            "titul": "MUDr.",
+            "jmeno": "V\u011bra",
+            "prijmeni": "Proch\u00e1zkov\u00e1",
+            "poradoveCislo": "2",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "3": {
+            "titul": null,
+            "jmeno": "Renata",
+            "prijmeni": "Oulehlov\u00e1",
+            "poradoveCislo": "3",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "4": {
+            "titul": null,
+            "jmeno": "Martin",
+            "prijmeni": "Huraj\u010d\u00edk",
+            "poradoveCislo": "4",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "5": {
+            "titul": null,
+            "jmeno": "Josef",
+            "prijmeni": "V\u00e1\u0148a",
+            "poradoveCislo": "5",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "6": {
+            "titul": "MUDr.",
+            "jmeno": "Ji\u0159\u00ed",
+            "prijmeni": "Penc",
+            "poradoveCislo": "6",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "7": {
+            "titul": "MUDr.",
+            "jmeno": "Jan",
+            "prijmeni": "Krop\u00e1\u010dek",
+            "poradoveCislo": "7",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "8": {
+            "titul": "Mgr.",
+            "jmeno": "Petr",
+            "prijmeni": "Kubis",
+            "poradoveCislo": "8",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "9": {
+            "titul": null,
+            "jmeno": "Ludmila",
+            "prijmeni": "Vocelkov\u00e1",
+            "poradoveCislo": "9",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "10": {
+            "titul": "Mgr.",
+            "jmeno": "Zden\u011bk",
+            "prijmeni": "Hrkal",
+            "poradoveCislo": "10",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "11": {
+            "titul": null,
+            "jmeno": "Pavel",
+            "prijmeni": "Benda",
+            "poradoveCislo": "11",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "12": {
+            "titul": null,
+            "jmeno": "Michala",
+            "prijmeni": "M\u00e1lkov\u00e1",
+            "poradoveCislo": "12",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "13": {
+            "titul": "Mgr.",
+            "jmeno": "David",
+            "prijmeni": "Hanakovi\u010d",
+            "poradoveCislo": "13",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "14": {
+            "titul": "Ing.",
+            "jmeno": "Jaroslava",
+            "prijmeni": "Bro\u017eov\u00e1 Lampertov\u00e1",
+            "poradoveCislo": "14",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        }
+    },
+    "lidiSpd": {
+        "1": {
+            "titul": null,
+            "jmeno": "Karla",
+            "prijmeni": "Ma\u0159\u00edkov\u00e1",
+            "poradoveCislo": "1",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "2": {
+            "titul": null,
+            "jmeno": "\u0160t\u011bp\u00e1n",
+            "prijmeni": "Str\u00e1n\u00edk",
+            "poradoveCislo": "2",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "3": {
+            "titul": null,
+            "jmeno": "Michal",
+            "prijmeni": "\u0160\u0165ov\u00ed\u010dek",
+            "poradoveCislo": "3",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "4": {
+            "titul": null,
+            "jmeno": "Ji\u0159\u00ed",
+            "prijmeni": "Radakovi\u010d",
+            "poradoveCislo": "4",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "5": {
+            "titul": "Ing.",
+            "jmeno": "Pavel",
+            "prijmeni": "Mote\u0161ick\u00fd",
+            "poradoveCislo": "5",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "6": {
+            "titul": "Mgr.",
+            "jmeno": "Eva",
+            "prijmeni": "Plhov\u00e1",
+            "poradoveCislo": "6",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "7": {
+            "titul": null,
+            "jmeno": "Ladislav",
+            "prijmeni": "Koutn\u00fd",
+            "poradoveCislo": "7",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "8": {
+            "titul": null,
+            "jmeno": "V\u011bra",
+            "prijmeni": "Ma\u0159\u00edkov\u00e1",
+            "poradoveCislo": "8",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "9": {
+            "titul": null,
+            "jmeno": "Petr",
+            "prijmeni": "Nimrichter",
+            "poradoveCislo": "9",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "10": {
+            "titul": null,
+            "jmeno": "Helena",
+            "prijmeni": "Baxov\u00e1",
+            "poradoveCislo": "10",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "11": {
+            "titul": null,
+            "jmeno": "Daniel",
+            "prijmeni": "Poli\u0161\u010duk",
+            "poradoveCislo": "11",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "12": {
+            "titul": null,
+            "jmeno": "Jaroslav",
+            "prijmeni": "Jirkovsk\u00fd",
+            "poradoveCislo": "12",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "13": {
+            "titul": null,
+            "jmeno": "Marta",
+            "prijmeni": "Peckov\u00e1 G\u00f6sslov\u00e1",
+            "poradoveCislo": "13",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        },
+        "14": {
+            "titul": null,
+            "jmeno": "Dana",
+            "prijmeni": "\u0160p\u00edrkov\u00e1",
+            "poradoveCislo": "14",
+            "pocetHlasu": "0",
+            "procentoHlasu": "0",
+            "mandat": "N",
+            "skrutinium": "0",
+            "poradiMandatu": "0",
+            "poradiNahradnika": "0"
+        }
+    }
+}
