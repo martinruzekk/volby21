@@ -1,24 +1,3 @@
-<?php
-
-$jsonFile = file_get_contents('src/source.json');
-$json = json_decode($jsonFile, true);
-
-$cr = $json['cr'];
-$kraj = $json['kraj'];
-$okresKV = $json['okresKV'];
-$okresCheb = $json['okresCheb'];
-$okresSok = $json['okresSok'];
-$vary = $json['vary'];
-$cheb = $json['cheb'];
-$ostrov = $json['ostrov'];
-$zlutice = $json['zlutice'];
-$sokolov = $json['sokolov'];
-$lidiSpolu = $json['lidiSpolu'];
-$lidiPistan = $json['lidiPistan'];
-$lidiAno = $json['lidiAno'];
-$lidiSpd = $json['lidiSpd'];
-?>
-
 <!DOCTYPE html>
 <html lang="cs">
 
@@ -35,29 +14,30 @@ $lidiSpd = $json['lidiSpd'];
 </head>
 
 <body>
-    <!--//TODO Coutdown do voleb-->
     <div class="container">
         <h1 class="is-size-1 has-text-centered">VOLBY 2021</h1>
         <h4 class="is-size-4 has-text-centered m-0 p-0">Volby v Karlovarském kraji</h4>
-
+        <h5 class="has-text-centered">Do začátku voleb zbývá: <span id="countdownDays"></span>:<span id="countdownHours"></span>:<span id="countdownMinutes"></span>:<span id="countdownSeconds"></span></h5>
+        <p class="has-text-weight-light has-text-right" id="nextReload"></p>
         <div class="box">
             <h3 class="is-size-3">Výsledky v celé republice</h3>
+            <p class="has-text-weight-light updateCr"></p>
             <div>
                 <h4 class="is-size-4">Sečteno</h4>
-                <progress class="progress is-link is-medium" value="<?php echo $cr['ucast']['zpracovano'] ?>" max="<?php echo $cr['ucast']['okrsky'] ?>">60%</progress>
+                <progress class="progress is-link is-medium crSectenoProgress" value="" max=""></progress>
                 <div class="strech">
                     <p>0 okrsků</p>
-                    <p><?php echo 'Zpracováno ' . $cr['ucast']['zpracovano'] . ' okrsků (' . $cr['ucast']['zpracovano_prc'] . '%)' ?></p>
-                    <p><?php echo $cr['ucast']['okrsky'] ?> okrsků</p>
+                    <p id="crSectenoAktualne"></p>
+                    <p id="crSectenoOkrskuCelkem"></p>
                 </div>
             </div>
 
             <div class="mt-5">
                 <h4 class="is-size-4 mt-5">Účast</h4>
-                <progress class="progress is-link is-medium" value="<?php echo $cr['ucast']['ucast'] ?>" max="100"><?php echo $cr['ucast']['ucast'] ?> %</progress>
+                <progress class="progress is-link is-medium crUcastProgress" value="<?php echo $cr['ucast']['ucast'] ?>" max="100"><?php echo $cr['ucast']['ucast'] ?> %</progress>
                 <div class="strech">
                     <p>0 %</p>
-                    <p><?php echo $cr['ucast']['ucast'] ?> %</p>
+                    <p id="crUcastPrc"></p>
                     <p>100 %</p>
                 </div>
             </div>
@@ -70,22 +50,23 @@ $lidiSpd = $json['lidiSpd'];
 
         <div class="box">
             <h3 class="is-size-3">Výsledky Karlovarském kraji</h3>
+            <p class="has-text-weight-light updateCr"></p>
             <div>
                 <h4 class="is-size-4">Sečteno</h4>
-                <progress class="progress is-link is-medium" value="<?php echo $kraj['ucast']['zpracovano'] ?>" max="<?php echo $kraj['ucast']['okrsky'] ?>"><?php echo $kraj['ucast']['zpracovano_prc'] ?></progress>
+                <progress class="progress is-link is-medium krajSectenoProgress" value="" max=""></progress>
                 <div class="strech">
                     <p>0 okrsků</p>
-                    <p><?php echo 'Zpracováno ' . $kraj['ucast']['zpracovano'] . ' okrsků (' . $kraj['ucast']['zpracovano_prc'] . '%)' ?></p>
-                    <p><?php echo $kraj['ucast']['okrsky'] ?> okrsků</p>
+                    <p id="krajSectenoAktualne"></p>
+                    <p id="krajSectenoOkrskuCelkem"></p>
                 </div>
             </div>
 
             <div class="mt-5">
                 <h4 class="is-size-4 mt-5">Účast</h4>
-                <progress class="progress is-link is-medium" value="<?php echo $kraj['ucast']['ucast'] ?>" max="100"><?php echo $kraj['ucast']['ucast'] ?> %</progress>
+                <progress class="progress is-link is-medium krajUcastProgress" value="" max="100"></progress>
                 <div class="strech">
                     <p>0 %</p>
-                    <p><?php echo $kraj['ucast']['ucast'] ?> %</p>
+                    <p id="krajUcastPrc"></p>
                     <p>100 %</p>
                 </div>
             </div>
@@ -99,22 +80,23 @@ $lidiSpd = $json['lidiSpd'];
 
         <div class="box">
             <h3 class="is-size-3">Okres Karlovy Vary</h3>
+            <p class="has-text-weight-light updateKv"></p>
             <div>
                 <h4 class="is-size-4">Sečteno</h4>
-                <progress class="progress is-link is-medium" value="<?php echo $okresKV['ucast']['zpracovano'] ?>" max="<?php echo $okresKV['ucast']['okrsky'] ?>"><?php echo $okresKV['ucast']['zpracovano_prc'] ?></progress>
+                <progress class="progress is-link is-medium okresKvSectenoProgress" value="" max=""></progress>
                 <div class="strech">
                     <p>0 okrsků</p>
-                    <p><?php echo 'Zpracováno ' . $okresKV['ucast']['zpracovano'] . ' okrsků (' . $okresKV['ucast']['zpracovano_prc'] . '%)' ?></p>
-                    <p><?php echo $okresKV['ucast']['okrsky'] ?> okrsků</p>
+                    <p id="okresKvSectenoAktualne"></p>
+                    <p id="okresKvSectenoOkrskuCelkem"></p>
                 </div>
             </div>
 
             <div class="mt-5">
                 <h4 class="is-size-4 mt-5">Účast</h4>
-                <progress class="progress is-link is-medium" value="<?php echo $okresKV['ucast']['ucast'] ?>" max="100"><?php echo $okresKV['ucast']['ucast'] ?> %</progress>
+                <progress class="progress is-link is-medium okresKvUcastProgress" value="" max="100"></progress>
                 <div class="strech">
                     <p>0 %</p>
-                    <p><?php echo $okresKV['ucast']['ucast'] ?> %</p>
+                    <p id="okresKvUcastPrc"></p>
                     <p>100 %</p>
                 </div>
             </div>
@@ -127,22 +109,23 @@ $lidiSpd = $json['lidiSpd'];
 
         <div class="box">
             <h3 class="is-size-3">Okres Sokolov</h3>
+            <p class="has-text-weight-light updateSok"></p>
             <div>
                 <h4 class="is-size-4">Sečteno</h4>
-                <progress class="progress is-link is-medium" value="<?php echo $okresSok['ucast']['zpracovano'] ?>" max="<?php echo $okresSok['ucast']['okrsky'] ?>"><?php echo $okresSok['ucast']['zpracovano_prc'] ?></progress>
+                <progress class="progress is-link is-medium okresSokSectenoProgress" value="" max=""></progress>
                 <div class="strech">
                     <p>0 okrsků</p>
-                    <p><?php echo 'Zpracováno ' . $okresSok['ucast']['zpracovano'] . ' okrsků (' . $okresSok['ucast']['zpracovano_prc'] . '%)' ?></p>
-                    <p><?php echo $okresSok['ucast']['okrsky'] ?> okrsků</p>
+                    <p id="okresSokSectenoAktualne"></p>
+                    <p id="okresSokSectenoOkrskuCelkem"></p>
                 </div>
             </div>
 
             <div class="mt-5">
                 <h4 class="is-size-4 mt-5">Účast</h4>
-                <progress class="progress is-link is-medium" value="<?php echo $okresSok['ucast']['ucast'] ?>" max="100"><?php echo $okresSok['ucast']['ucast'] ?> %</progress>
+                <progress class="progress is-link is-medium okresSokUcastProgress" value="<?php echo $okresSok['ucast']['ucast'] ?>" max="100"><?php echo $okresSok['ucast']['ucast'] ?> %</progress>
                 <div class="strech">
                     <p>0 %</p>
-                    <p><?php echo $okresSok['ucast']['ucast'] ?> %</p>
+                    <p id="okresSokUcastPrc"></p>
                     <p>100 %</p>
                 </div>
             </div>
@@ -155,22 +138,23 @@ $lidiSpd = $json['lidiSpd'];
 
         <div class="box">
             <h3 class="is-size-3">Okres Cheb</h3>
+            <p class="has-text-weight-light updateCh"></p>
             <div>
                 <h4 class="is-size-4">Sečteno</h4>
-                <progress class="progress is-link is-medium" value="<?php echo $okresCheb['ucast']['zpracovano'] ?>" max="<?php echo $okresCheb['ucast']['okrsky'] ?>"><?php echo $okresCheb['ucast']['zpracovano_prc'] ?></progress>
+                <progress class="progress is-link is-medium okresChebSectenoProgress" value="" max=""></progress>
                 <div class="strech">
                     <p>0 okrsků</p>
-                    <p><?php echo 'Zpracováno ' . $okresCheb['ucast']['zpracovano'] . ' okrsků (' . $okresCheb['ucast']['zpracovano_prc'] . '%)' ?></p>
-                    <p><?php echo $okresCheb['ucast']['okrsky'] ?> okrsků</p>
+                    <p id="okresChebSectenoAktualne"></p>
+                    <p id="okresChebSectenoOkrskuCelkem"></p>
                 </div>
             </div>
 
             <div class="mt-5">
                 <h4 class="is-size-4 mt-5">Účast</h4>
-                <progress class="progress is-link is-medium" value="<?php echo $okresCheb['ucast']['ucast'] ?>" max="100"><?php echo $okresCheb['ucast']['ucast'] ?> %</progress>
+                <progress class="progress is-link is-medium okresChebUcastProgress" value="" max="100"></progress>
                 <div class="strech">
                     <p>0 %</p>
-                    <p><?php echo $okresCheb['ucast']['ucast'] ?> %</p>
+                    <p id="okresChebUcastPrc"></p>
                     <p>100 %</p>
                 </div>
             </div>
@@ -183,22 +167,23 @@ $lidiSpd = $json['lidiSpd'];
 
         <div class="box">
             <h3 class="is-size-3">Město Karlovy Vary</h3>
+            <p class="has-text-weight-light updateKv"></p>
             <div>
                 <h4 class="is-size-4">Sečteno</h4>
-                <progress class="progress is-link is-medium" value="<?php echo $vary['ucast']['zpracovano'] ?>" max="<?php echo $vary['ucast']['okrsky'] ?>"><?php echo $vary['ucast']['zpracovano_prc'] ?></progress>
+                <progress class="progress is-link is-medium varySectenoProgress" value="" max=""></progress>
                 <div class="strech">
                     <p>0 okrsků</p>
-                    <p><?php echo 'Zpracováno ' . $vary['ucast']['zpracovano'] . ' okrsků (' . $vary['ucast']['zpracovano_prc'] . '%)' ?></p>
-                    <p><?php echo $vary['ucast']['okrsky'] ?> okrsků</p>
+                    <p id="varySectenoAktualne"></p>
+                    <p id="varySectenoOkrskuCelkem"></p>
                 </div>
             </div>
 
             <div class="mt-5">
                 <h4 class="is-size-4 mt-5">Účast</h4>
-                <progress class="progress is-link is-medium" value="<?php echo $vary['ucast']['ucast'] ?>" max="100"><?php echo $vary['ucast']['ucast'] ?> %</progress>
+                <progress class="progress is-link is-medium varyUcastProgress" value="" max="100"></progress>
                 <div class="strech">
                     <p>0 %</p>
-                    <p><?php echo $vary['ucast']['ucast'] ?> %</p>
+                    <p id="varyUcastPrc"></p>
                     <p>100 %</p>
                 </div>
             </div>
@@ -211,22 +196,23 @@ $lidiSpd = $json['lidiSpd'];
 
         <div class="box">
             <h3 class="is-size-3">Město Sokolov</h3>
+            <p class="has-text-weight-light updateSok"></p>
             <div>
                 <h4 class="is-size-4">Sečteno</h4>
-                <progress class="progress is-link is-medium" value="<?php echo $sokolov['ucast']['zpracovano'] ?>" max="<?php echo $sokolov['ucast']['okrsky'] ?>"><?php echo $sokolov['ucast']['zpracovano_prc'] ?></progress>
+                <progress class="progress is-link is-medium sokolovSectenoProgress" value="" max=""></progress>
                 <div class="strech">
                     <p>0 okrsků</p>
-                    <p><?php echo 'Zpracováno ' . $sokolov['ucast']['zpracovano'] . ' okrsků (' . $sokolov['ucast']['zpracovano_prc'] . '%)' ?></p>
-                    <p><?php echo $sokolov['ucast']['okrsky'] ?> okrsků</p>
+                    <p id="sokolovSectenoAktualne"></p>
+                    <p id="sokolovSectenoOkrskuCelkem"></p>
                 </div>
             </div>
 
             <div class="mt-5">
                 <h4 class="is-size-4 mt-5">Účast</h4>
-                <progress class="progress is-link is-medium" value="<?php echo $sokolov['ucast']['ucast'] ?>" max="100"><?php echo $sokolov['ucast']['ucast'] ?> %</progress>
+                <progress class="progress is-link is-medium sokolovUcastProgress" value="" max="100"></progress>
                 <div class="strech">
                     <p>0 %</p>
-                    <p><?php echo $sokolov['ucast']['ucast'] ?> %</p>
+                    <p id="sokolovUcastPrc"></p>
                     <p>100 %</p>
                 </div>
             </div>
@@ -239,22 +225,23 @@ $lidiSpd = $json['lidiSpd'];
 
         <div class="box">
             <h3 class="is-size-3">Město Cheb</h3>
+            <p class="has-text-weight-light updateCh"></p>
             <div>
                 <h4 class="is-size-4">Sečteno</h4>
-                <progress class="progress is-link is-medium" value="<?php echo $cheb['ucast']['zpracovano'] ?>" max="<?php echo $cheb['ucast']['okrsky'] ?>"><?php echo $cheb['ucast']['zpracovano_prc'] ?></progress>
+                <progress class="progress is-link is-medium chebSectenoProgress" value="" max=""></progress>
                 <div class="strech">
                     <p>0 okrsků</p>
-                    <p><?php echo 'Zpracováno ' . $cheb['ucast']['zpracovano'] . ' okrsků (' . $cheb['ucast']['zpracovano_prc'] . '%)' ?></p>
-                    <p><?php echo $cheb['ucast']['okrsky'] ?> okrsků</p>
+                    <p id="chebSectenoAktualne"></p>
+                    <p id="chebSectenoOkrskuCelkem"></p>
                 </div>
             </div>
 
             <div class="mt-5">
                 <h4 class="is-size-4 mt-5">Účast</h4>
-                <progress class="progress is-link is-medium" value="<?php echo $cheb['ucast']['ucast'] ?>" max="100"><?php echo $cheb['ucast']['ucast'] ?> %</progress>
+                <progress class="progress is-link is-medium chebUcastProgress" value="" max="100"></progress>
                 <div class="strech">
                     <p>0 %</p>
-                    <p><?php echo $cheb['ucast']['ucast'] ?> %</p>
+                    <p id="chebUcastPrc"></p>
                     <p>100 %</p>
                 </div>
             </div>
@@ -267,22 +254,23 @@ $lidiSpd = $json['lidiSpd'];
 
         <div class="box">
             <h3 class="is-size-3">Město Ostrov</h3>
+            <p class="has-text-weight-light updateKv"></p>
             <div>
                 <h4 class="is-size-4">Sečteno</h4>
-                <progress class="progress is-link is-medium" value="<?php echo $ostrov['ucast']['zpracovano'] ?>" max="<?php echo $ostrov['ucast']['okrsky'] ?>"><?php echo $ostrov['ucast']['zpracovano_prc'] ?></progress>
+                <progress class="progress is-link is-medium ostrovSectenoProgress" value="" max=""></progress>
                 <div class="strech">
                     <p>0 okrsků</p>
-                    <p><?php echo 'Zpracováno ' . $ostrov['ucast']['zpracovano'] . ' okrsků (' . $ostrov['ucast']['zpracovano_prc'] . '%)' ?></p>
-                    <p><?php echo $ostrov['ucast']['okrsky'] ?> okrsků</p>
+                    <p id="ostrovSectenoAktualne"></p>
+                    <p id="ostrovSectenoOkrskuCelkem"></p>
                 </div>
             </div>
 
             <div class="mt-5">
                 <h4 class="is-size-4 mt-5">Účast</h4>
-                <progress class="progress is-link is-medium" value="<?php echo $ostrov['ucast']['ucast'] ?>" max="100"><?php echo $ostrov['ucast']['ucast'] ?> %</progress>
+                <progress class="progress is-link is-medium ostrovUcastProgress" value="<?php echo $ostrov['ucast']['ucast'] ?>" max="100"><?php echo $ostrov['ucast']['ucast'] ?> %</progress>
                 <div class="strech">
                     <p>0 %</p>
-                    <p><?php echo $ostrov['ucast']['ucast'] ?> %</p>
+                    <p id="ostrovUcastPrc"></p>
                     <p>100 %</p>
                 </div>
             </div>
@@ -295,22 +283,23 @@ $lidiSpd = $json['lidiSpd'];
 
         <div class="box">
             <h3 class="is-size-3">Město Žlutice</h3>
+            <p class="has-text-weight-light updateKv"></p>
             <div>
                 <h4 class="is-size-4">Sečteno</h4>
-                <progress class="progress is-link is-medium" value="<?php echo $zlutice['ucast']['zpracovano'] ?>" max="<?php echo $zlutice['ucast']['okrsky'] ?>"><?php echo $zlutice['ucast']['zpracovano_prc'] ?></progress>
+                <progress class="progress is-link is-medium zluticeSectenoProgress" value="" max=""></progress>
                 <div class="strech">
                     <p>0 okrsků</p>
-                    <p><?php echo 'Zpracováno ' . $zlutice['ucast']['zpracovano'] . ' okrsků (' . $zlutice['ucast']['zpracovano_prc'] . '%)' ?></p>
-                    <p><?php echo $zlutice['ucast']['okrsky'] ?> okrsků</p>
+                    <p id="zluticeSectenoAktualne"></p>
+                    <p id="zluticeSectenoOkrskuCelkem"></p>
                 </div>
             </div>
 
             <div class="mt-5">
                 <h4 class="is-size-4 mt-5">Účast</h4>
-                <progress class="progress is-link is-medium" value="<?php echo $zlutice['ucast']['ucast'] ?>" max="100"><?php echo $zlutice['ucast']['ucast'] ?> %</progress>
+                <progress class="progress is-link is-medium zluticeUcastProgress" value="" max="100"></progress>
                 <div class="strech">
                     <p>0 %</p>
-                    <p><?php echo $zlutice['ucast']['ucast'] ?> %</p>
+                    <p id="zluticeUcastPrc"></p>
                     <p>100 %</p>
                 </div>
             </div>
@@ -323,11 +312,12 @@ $lidiSpd = $json['lidiSpd'];
 
         <div class="box">
             <h3 class="is-size-3">Kandidáti SPOLU</h3>
+            <p class="has-text-weight-light updateCr"></p>
             <div class="table-container">
                 <table class="table table is-striped">
                     <thead>
                         <tr>
-                            <th>Č.</th>
+                            <th>#</th>
                             <th>Jméno</th>
                             <th>Počet hlasů</th>
                             <th>Procento hlasů</th>
@@ -337,43 +327,8 @@ $lidiSpd = $json['lidiSpd'];
                             <th>Pořádí náhradníka</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <?php
+                    <tbody id="spoluLidiTbody">
 
-                        foreach ($lidiSpolu as $kandidat) {
-                            echo '<tr>';
-                            echo '<td>';
-                            echo $kandidat['poradoveCislo'];
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['titul'] . ' ' . $kandidat['jmeno'] . ' ' . $kandidat['prijmeni'];
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['pocetHlasu'];
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['procentoHlasu'];
-                            echo '</td>';
-                            echo '<td class="has-text-centered">';
-                            if ($kandidat['mandat'] == "N") {
-                                echo '<i class="fas fa-times-circle"></i>';
-                            } else {
-                                echo '<i class="fas fa-check-circle"></i>';
-                            }
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['skrutinium'];
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['poradiMandatu'];
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['poradiNahradnika'];
-                            echo '</td>';
-                            echo '</tr>';
-                        }
-
-                        ?>
                     </tbody>
                 </table>
             </div>
@@ -381,6 +336,7 @@ $lidiSpd = $json['lidiSpd'];
 
         <div class="box">
             <h3 class="is-size-3">Kandidáti ANO</h3>
+            <p class="has-text-weight-light updateCr"></p>
             <div class="table-container">
                 <table class="table table is-striped">
                     <thead>
@@ -395,43 +351,8 @@ $lidiSpd = $json['lidiSpd'];
                             <th>Pořádí náhradníka</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <?php
+                    <tbody id="anoLidiTbody">
 
-                        foreach ($lidiAno as $kandidat) {
-                            echo '<tr>';
-                            echo '<td>';
-                            echo $kandidat['poradoveCislo'];
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['titul'] . ' ' . $kandidat['jmeno'] . ' ' . $kandidat['prijmeni'];
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['pocetHlasu'];
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['procentoHlasu'];
-                            echo '</td>';
-                            echo '<td class="has-text-centered">';
-                            if ($kandidat['mandat'] == "N") {
-                                echo '<i class="fas fa-times-circle"></i>';
-                            } else {
-                                echo '<i class="fas fa-check-circle"></i>';
-                            }
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['skrutinium'];
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['poradiMandatu'];
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['poradiNahradnika'];
-                            echo '</td>';
-                            echo '</tr>';
-                        }
-
-                        ?>
                     </tbody>
                 </table>
             </div>
@@ -439,6 +360,7 @@ $lidiSpd = $json['lidiSpd'];
 
         <div class="box">
             <h3 class="is-size-3">Kandidáti PirStan</h3>
+            <p class="has-text-weight-light updateCr"></p>
             <div class="table-container">
                 <table class="table table is-striped">
                     <thead>
@@ -453,43 +375,8 @@ $lidiSpd = $json['lidiSpd'];
                             <th>Pořádí náhradníka</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <?php
+                    <tbody id="pistanLidiTbody">
 
-                        foreach ($lidiPistan as $kandidat) {
-                            echo '<tr>';
-                            echo '<td>';
-                            echo $kandidat['poradoveCislo'];
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['titul'] . ' ' . $kandidat['jmeno'] . ' ' . $kandidat['prijmeni'];
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['pocetHlasu'];
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['procentoHlasu'];
-                            echo '</td>';
-                            echo '<td class="has-text-centered">';
-                            if ($kandidat['mandat'] == "N") {
-                                echo '<i class="fas fa-times-circle"></i>';
-                            } else {
-                                echo '<i class="fas fa-check-circle"></i>';
-                            }
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['skrutinium'];
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['poradiMandatu'];
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['poradiNahradnika'];
-                            echo '</td>';
-                            echo '</tr>';
-                        }
-
-                        ?>
                     </tbody>
                 </table>
             </div>
@@ -497,6 +384,7 @@ $lidiSpd = $json['lidiSpd'];
 
         <div class="box">
             <h3 class="is-size-3">Kandidáti SPD</h3>
+            <p class="has-text-weight-light updateCr"></p>
             <div class="table-container">
                 <table class="table table is-striped">
                     <thead>
@@ -511,43 +399,7 @@ $lidiSpd = $json['lidiSpd'];
                             <th>Pořádí náhradníka</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <?php
-
-                        foreach ($lidiSpd as $kandidat) {
-                            echo '<tr>';
-                            echo '<td>';
-                            echo $kandidat['poradoveCislo'];
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['titul'] . ' ' . $kandidat['jmeno'] . ' ' . $kandidat['prijmeni'];
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['pocetHlasu'];
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['procentoHlasu'];
-                            echo '</td>';
-                            echo '<td class="has-text-centered">';
-                            if ($kandidat['mandat'] == "N") {
-                                echo '<i class="fas fa-times-circle"></i>';
-                            } else {
-                                echo '<i class="fas fa-check-circle"></i>';
-                            }
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['skrutinium'];
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['poradiMandatu'];
-                            echo '</td>';
-                            echo '<td>';
-                            echo $kandidat['poradiNahradnika'];
-                            echo '</td>';
-                            echo '</tr>';
-                        }
-
-                        ?>
+                    <tbody id="spdLidiTbody">
                     </tbody>
                 </table>
             </div>
@@ -558,318 +410,6 @@ $lidiSpd = $json['lidiSpd'];
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/868ac28d90.js" crossorigin="anonymous"></script>
     <script src="./scripts/index.js"></script>
-
-    <script>
-        var ctxCr = document.getElementById('chartCr').getContext('2d');
-        var crChart = new Chart(ctxCr, {
-            type: 'bar',
-            data: {
-                labels: ['SPOLU', 'ANO', 'PirStan', 'SDP', 'KSČM', 'ČSSD', 'Přísaha', 'TSS', 'Zeleni', 'VOLNÝ blok'],
-                datasets: [{
-                    data: [<?php echo $cr['spolu']['prc'] ?>, <?php echo $cr['ano']['prc'] ?>, <?php echo $cr['pistan']['prc'] ?>, <?php echo $cr['spd']['prc'] ?>, <?php echo $cr['kscm']['prc'] ?>, <?php echo $cr['cssd']['prc'] ?>, <?php echo $cr['prisaha']['prc'] ?>, <?php echo $cr['tss']['prc'] ?>, <?php echo $cr['zeleni']['prc'] ?>, <?php echo $cr['volny']['prc'] ?>],
-
-                    backgroundColor: [
-                        'rgb(17,17,73)',
-                        'rgb(0,242,242)',
-                        'rgba(0, 0, 0)',
-                        'rgb(13,113,178)',
-                        'rgb(225,27,34)',
-                        'rgb(218,53,17)',
-                        'rgb(0,50,255)',
-                        'rgb(48,39,134)',
-                        'rgb(96,181,75)',
-                        'rgb(117,75,42)'
-                    ]
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-
-        var ctxKVK = document.getElementById('chartKVK').getContext('2d');
-        var chartKVK = new Chart(ctxKVK, {
-            type: 'bar',
-            data: {
-                labels: ['SPOLU', 'ANO', 'PirStan', 'SDP', 'KSČM', 'ČSSD', 'Přísaha', 'TSS', 'Zeleni', 'VOLNÝ blok'],
-                datasets: [{
-                    data: [<?php echo $cr['spolu']['prc'] ?>, <?php echo $cr['ano']['prc'] ?>, <?php echo $cr['pistan']['prc'] ?>, <?php echo $cr['spd']['prc'] ?>, <?php echo $cr['kscm']['prc'] ?>, <?php echo $cr['cssd']['prc'] ?>, <?php echo $cr['prisaha']['prc'] ?>, <?php echo $cr['tss']['prc'] ?>, <?php echo $cr['zeleni']['prc'] ?>, <?php echo $cr['volny']['prc'] ?>],
-
-                    backgroundColor: [
-                        'rgb(17,17,73)',
-                        'rgb(0,242,242)',
-                        'rgba(0, 0, 0)',
-                        'rgb(13,113,178)',
-                        'rgb(225,27,34)',
-                        'rgb(218,53,17)',
-                        'rgb(0,50,255)',
-                        'rgb(48,39,134)',
-                        'rgb(96,181,75)',
-                        'rgb(117,75,42)'
-                    ]
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-
-        var ctxOkresKV = document.getElementById('chartOkresKV').getContext('2d');
-        var chartOkresKV = new Chart(ctxOkresKV, {
-            type: 'bar',
-            data: {
-                labels: ['SPOLU', 'ANO', 'PirStan', 'SDP', 'KSČM', 'ČSSD', 'Přísaha', 'TSS', 'Zeleni', 'VOLNÝ blok'],
-                datasets: [{
-                    data: [<?php echo $cr['spolu']['prc'] ?>, <?php echo $cr['ano']['prc'] ?>, <?php echo $cr['pistan']['prc'] ?>, <?php echo $cr['spd']['prc'] ?>, <?php echo $cr['kscm']['prc'] ?>, <?php echo $cr['cssd']['prc'] ?>, <?php echo $cr['prisaha']['prc'] ?>, <?php echo $cr['tss']['prc'] ?>, <?php echo $cr['zeleni']['prc'] ?>, <?php echo $cr['volny']['prc'] ?>],
-
-                    backgroundColor: [
-                        'rgb(17,17,73)',
-                        'rgb(0,242,242)',
-                        'rgba(0, 0, 0)',
-                        'rgb(13,113,178)',
-                        'rgb(225,27,34)',
-                        'rgb(218,53,17)',
-                        'rgb(0,50,255)',
-                        'rgb(48,39,134)',
-                        'rgb(96,181,75)',
-                        'rgb(117,75,42)'
-                    ]
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-
-        var ctxOkresSok = document.getElementById('chartOkresSok').getContext('2d');
-        var chartOkresSok = new Chart(ctxOkresSok, {
-            type: 'bar',
-            data: {
-                labels: ['SPOLU', 'ANO', 'PirStan', 'SDP', 'KSČM', 'ČSSD', 'Přísaha', 'TSS', 'Zeleni', 'VOLNÝ blok'],
-                datasets: [{
-                    data: [<?php echo $cr['spolu']['prc'] ?>, <?php echo $cr['ano']['prc'] ?>, <?php echo $cr['pistan']['prc'] ?>, <?php echo $cr['spd']['prc'] ?>, <?php echo $cr['kscm']['prc'] ?>, <?php echo $cr['cssd']['prc'] ?>, <?php echo $cr['prisaha']['prc'] ?>, <?php echo $cr['tss']['prc'] ?>, <?php echo $cr['zeleni']['prc'] ?>, <?php echo $cr['volny']['prc'] ?>],
-
-                    backgroundColor: [
-                        'rgb(17,17,73)',
-                        'rgb(0,242,242)',
-                        'rgba(0, 0, 0)',
-                        'rgb(13,113,178)',
-                        'rgb(225,27,34)',
-                        'rgb(218,53,17)',
-                        'rgb(0,50,255)',
-                        'rgb(48,39,134)',
-                        'rgb(96,181,75)',
-                        'rgb(117,75,42)'
-                    ]
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-
-        var ctxOkresCheb = document.getElementById('chartOkresCheb').getContext('2d');
-        var chartOkresCheb = new Chart(ctxOkresCheb, {
-            type: 'bar',
-            data: {
-                labels: ['SPOLU', 'ANO', 'PirStan', 'SDP', 'KSČM', 'ČSSD', 'Přísaha', 'TSS', 'Zeleni', 'VOLNÝ blok'],
-                datasets: [{
-                    data: [<?php echo $cr['spolu']['prc'] ?>, <?php echo $cr['ano']['prc'] ?>, <?php echo $cr['pistan']['prc'] ?>, <?php echo $cr['spd']['prc'] ?>, <?php echo $cr['kscm']['prc'] ?>, <?php echo $cr['cssd']['prc'] ?>, <?php echo $cr['prisaha']['prc'] ?>, <?php echo $cr['tss']['prc'] ?>, <?php echo $cr['zeleni']['prc'] ?>, <?php echo $cr['volny']['prc'] ?>],
-
-                    backgroundColor: [
-                        'rgb(17,17,73)',
-                        'rgb(0,242,242)',
-                        'rgba(0, 0, 0)',
-                        'rgb(13,113,178)',
-                        'rgb(225,27,34)',
-                        'rgb(218,53,17)',
-                        'rgb(0,50,255)',
-                        'rgb(48,39,134)',
-                        'rgb(96,181,75)',
-                        'rgb(117,75,42)'
-                    ]
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-
-        var ctxVary = document.getElementById('chartVary').getContext('2d');
-        var chartVary = new Chart(ctxVary, {
-            type: 'bar',
-            data: {
-                labels: ['SPOLU', 'ANO', 'PirStan', 'SDP', 'KSČM', 'ČSSD', 'Přísaha', 'TSS', 'Zeleni', 'VOLNÝ blok'],
-                datasets: [{
-                    data: [<?php echo $cr['spolu']['prc'] ?>, <?php echo $cr['ano']['prc'] ?>, <?php echo $cr['pistan']['prc'] ?>, <?php echo $cr['spd']['prc'] ?>, <?php echo $cr['kscm']['prc'] ?>, <?php echo $cr['cssd']['prc'] ?>, <?php echo $cr['prisaha']['prc'] ?>, <?php echo $cr['tss']['prc'] ?>, <?php echo $cr['zeleni']['prc'] ?>, <?php echo $cr['volny']['prc'] ?>],
-
-                    backgroundColor: [
-                        'rgb(17,17,73)',
-                        'rgb(0,242,242)',
-                        'rgba(0, 0, 0)',
-                        'rgb(13,113,178)',
-                        'rgb(225,27,34)',
-                        'rgb(218,53,17)',
-                        'rgb(0,50,255)',
-                        'rgb(48,39,134)',
-                        'rgb(96,181,75)',
-                        'rgb(117,75,42)'
-                    ]
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-
-        var ctxSokolov = document.getElementById('chartSokolov').getContext('2d');
-        var chartSokolov = new Chart(ctxSokolov, {
-            type: 'bar',
-            data: {
-                labels: ['SPOLU', 'ANO', 'PirStan', 'SDP', 'KSČM', 'ČSSD', 'Přísaha', 'TSS', 'Zeleni', 'VOLNÝ blok'],
-                datasets: [{
-                    data: [<?php echo $cr['spolu']['prc'] ?>, <?php echo $cr['ano']['prc'] ?>, <?php echo $cr['pistan']['prc'] ?>, <?php echo $cr['spd']['prc'] ?>, <?php echo $cr['kscm']['prc'] ?>, <?php echo $cr['cssd']['prc'] ?>, <?php echo $cr['prisaha']['prc'] ?>, <?php echo $cr['tss']['prc'] ?>, <?php echo $cr['zeleni']['prc'] ?>, <?php echo $cr['volny']['prc'] ?>],
-
-                    backgroundColor: [
-                        'rgb(17,17,73)',
-                        'rgb(0,242,242)',
-                        'rgba(0, 0, 0)',
-                        'rgb(13,113,178)',
-                        'rgb(225,27,34)',
-                        'rgb(218,53,17)',
-                        'rgb(0,50,255)',
-                        'rgb(48,39,134)',
-                        'rgb(96,181,75)',
-                        'rgb(117,75,42)'
-                    ]
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-
-        var ctxCheb = document.getElementById('chartCheb').getContext('2d');
-        var chartCheb = new Chart(ctxCheb, {
-            type: 'bar',
-            data: {
-                labels: ['SPOLU', 'ANO', 'PirStan', 'SDP', 'KSČM', 'ČSSD', 'Přísaha', 'TSS', 'Zeleni', 'VOLNÝ blok'],
-                datasets: [{
-                    data: [<?php echo $cr['spolu']['prc'] ?>, <?php echo $cr['ano']['prc'] ?>, <?php echo $cr['pistan']['prc'] ?>, <?php echo $cr['spd']['prc'] ?>, <?php echo $cr['kscm']['prc'] ?>, <?php echo $cr['cssd']['prc'] ?>, <?php echo $cr['prisaha']['prc'] ?>, <?php echo $cr['tss']['prc'] ?>, <?php echo $cr['zeleni']['prc'] ?>, <?php echo $cr['volny']['prc'] ?>],
-
-                    backgroundColor: [
-                        'rgb(17,17,73)',
-                        'rgb(0,242,242)',
-                        'rgba(0, 0, 0)',
-                        'rgb(13,113,178)',
-                        'rgb(225,27,34)',
-                        'rgb(218,53,17)',
-                        'rgb(0,50,255)',
-                        'rgb(48,39,134)',
-                        'rgb(96,181,75)',
-                        'rgb(117,75,42)'
-                    ]
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-
-        var ctxOstrov = document.getElementById('chartOstrov').getContext('2d');
-        var chartOstrov = new Chart(ctxOstrov, {
-            type: 'bar',
-            data: {
-                labels: ['SPOLU', 'ANO', 'PirStan', 'SDP', 'KSČM', 'ČSSD', 'Přísaha', 'TSS', 'Zeleni', 'VOLNÝ blok'],
-                datasets: [{
-                    data: [<?php echo $cr['spolu']['prc'] ?>, <?php echo $cr['ano']['prc'] ?>, <?php echo $cr['pistan']['prc'] ?>, <?php echo $cr['spd']['prc'] ?>, <?php echo $cr['kscm']['prc'] ?>, <?php echo $cr['cssd']['prc'] ?>, <?php echo $cr['prisaha']['prc'] ?>, <?php echo $cr['tss']['prc'] ?>, <?php echo $cr['zeleni']['prc'] ?>, <?php echo $cr['volny']['prc'] ?>],
-
-                    backgroundColor: [
-                        'rgb(17,17,73)',
-                        'rgb(0,242,242)',
-                        'rgba(0, 0, 0)',
-                        'rgb(13,113,178)',
-                        'rgb(225,27,34)',
-                        'rgb(218,53,17)',
-                        'rgb(0,50,255)',
-                        'rgb(48,39,134)',
-                        'rgb(96,181,75)',
-                        'rgb(117,75,42)'
-                    ]
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-
-        var ctxZlutice = document.getElementById('chartZlutice').getContext('2d');
-        var chartZlutice = new Chart(ctxZlutice, {
-            type: 'bar',
-            data: {
-                labels: ['SPOLU', 'ANO', 'PirStan', 'SDP', 'KSČM', 'ČSSD', 'Přísaha', 'TSS', 'Zeleni', 'VOLNÝ blok'],
-                datasets: [{
-                    data: [<?php echo $cr['spolu']['prc'] ?>, <?php echo $cr['ano']['prc'] ?>, <?php echo $cr['pistan']['prc'] ?>, <?php echo $cr['spd']['prc'] ?>, <?php echo $cr['kscm']['prc'] ?>, <?php echo $cr['cssd']['prc'] ?>, <?php echo $cr['prisaha']['prc'] ?>, <?php echo $cr['tss']['prc'] ?>, <?php echo $cr['zeleni']['prc'] ?>, <?php echo $cr['volny']['prc'] ?>],
-
-                    backgroundColor: [
-                        'rgb(17,17,73)',
-                        'rgb(0,242,242)',
-                        'rgba(0, 0, 0)',
-                        'rgb(13,113,178)',
-                        'rgb(225,27,34)',
-                        'rgb(218,53,17)',
-                        'rgb(0,50,255)',
-                        'rgb(48,39,134)',
-                        'rgb(96,181,75)',
-                        'rgb(117,75,42)'
-                    ]
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-    </script>
 </body>
 
 </html>

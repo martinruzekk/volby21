@@ -4,7 +4,8 @@
             "okrsky": 14886,
             "zpracovano": 0,
             "zpracovano_prc": 0,
-            "ucast": 0
+            "ucast": 0,
+            "update": "2021-09-28T10:18:16"
         },
         "spolu": {
             "hlasy": 0,
@@ -120,7 +121,8 @@
             "okrsky": 141,
             "zpracovano": 0,
             "zpracovano_prc": 0,
-            "ucast": 0
+            "ucast": 0,
+            "update": "2021-09-28T10:18:16"
         },
         "spolu": {
             "hlasy": 0,
@@ -178,7 +180,8 @@
             "okrsky": 112,
             "zpracovano": 0,
             "zpracovano_prc": 0,
-            "ucast": 0
+            "ucast": 0,
+            "update": "2021-09-28T10:18:16"
         },
         "spolu": {
             "hlasy": 0,
@@ -236,7 +239,8 @@
             "okrsky": 92,
             "zpracovano": 0,
             "zpracovano_prc": 0,
-            "ucast": 0
+            "ucast": 0,
+            "update": "2021-09-28T10:18:16"
         },
         "spolu": {
             "hlasy": 0,
@@ -268,7 +272,11 @@
             "prc": 0,
             "nazev": "\u010cesk\u00e1 strana soci\u00e1ln\u011b demokratick\u00e1"
         },
-        "prisaha": null,
+        "prisaha": {
+            "hlasy": 0,
+            "prc": 0,
+            "nazev": "P\u0158\u00cdSAHA - ob\u010dansk\u00e9 hnut\u00ed Roberta \u0160lachty"
+        },
         "tss": {
             "hlasy": 0,
             "prc": 0,
@@ -299,50 +307,50 @@
                 "prc": 0,
                 "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
             },
-            "pis": {
+            "pistan": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "PIR\u00c1TI a STAROSTOV\u00c9"
             },
             "ano": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "ANO 2011"
             },
             "spd": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "Svoboda a p\u0159\u00edm\u00e1 demokracie (SPD)"
             },
             "kscm": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "Komunistick\u00e1 strana \u010cech a Moravy"
             },
             "cssd": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "\u010cesk\u00e1 strana soci\u00e1ln\u011b demokratick\u00e1"
             },
             "prisaha": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "P\u0158\u00cdSAHA - ob\u010dansk\u00e9 hnut\u00ed Roberta \u0160lachty"
             },
             "zeleni": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "Strana zelen\u00fdch"
             },
             "tss": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "Trikolora Svobodn\u00ed Soukromn\u00edci"
             },
             "volny": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "VOLN\u00dd blok"
             }
         }
     },
@@ -360,50 +368,50 @@
                 "prc": 0,
                 "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
             },
-            "pis": {
+            "pistan": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "PIR\u00c1TI a STAROSTOV\u00c9"
             },
             "ano": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "ANO 2011"
             },
             "spd": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "Svoboda a p\u0159\u00edm\u00e1 demokracie (SPD)"
             },
             "kscm": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "Komunistick\u00e1 strana \u010cech a Moravy"
             },
             "cssd": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "\u010cesk\u00e1 strana soci\u00e1ln\u011b demokratick\u00e1"
             },
             "prisaha": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "P\u0158\u00cdSAHA - ob\u010dansk\u00e9 hnut\u00ed Roberta \u0160lachty"
             },
             "zeleni": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "Strana zelen\u00fdch"
             },
             "tss": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "Trikolora Svobodn\u00ed Soukromn\u00edci"
             },
             "volny": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "VOLN\u00dd blok"
             }
         }
     },
@@ -421,50 +429,50 @@
                 "prc": 0,
                 "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
             },
-            "pis": {
+            "pistan": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "PIR\u00c1TI a STAROSTOV\u00c9"
             },
             "ano": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "ANO 2011"
             },
             "spd": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "Svoboda a p\u0159\u00edm\u00e1 demokracie (SPD)"
             },
             "kscm": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "Komunistick\u00e1 strana \u010cech a Moravy"
             },
             "cssd": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "\u010cesk\u00e1 strana soci\u00e1ln\u011b demokratick\u00e1"
             },
             "prisaha": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "P\u0158\u00cdSAHA - ob\u010dansk\u00e9 hnut\u00ed Roberta \u0160lachty"
             },
             "zeleni": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "Strana zelen\u00fdch"
             },
             "tss": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "Trikolora Svobodn\u00ed Soukromn\u00edci"
             },
             "volny": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "VOLN\u00dd blok"
             }
         }
     },
@@ -482,50 +490,50 @@
                 "prc": 0,
                 "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
             },
-            "pis": {
+            "pistan": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "PIR\u00c1TI a STAROSTOV\u00c9"
             },
             "ano": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "ANO 2011"
             },
             "spd": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "Svoboda a p\u0159\u00edm\u00e1 demokracie (SPD)"
             },
             "kscm": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "Komunistick\u00e1 strana \u010cech a Moravy"
             },
             "cssd": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "\u010cesk\u00e1 strana soci\u00e1ln\u011b demokratick\u00e1"
             },
             "prisaha": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "P\u0158\u00cdSAHA - ob\u010dansk\u00e9 hnut\u00ed Roberta \u0160lachty"
             },
             "zeleni": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "Strana zelen\u00fdch"
             },
             "tss": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "Trikolora Svobodn\u00ed Soukromn\u00edci"
             },
             "volny": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "VOLN\u00dd blok"
             }
         }
     },
@@ -543,50 +551,50 @@
                 "prc": 0,
                 "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
             },
-            "pis": {
+            "pistan": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "PIR\u00c1TI a STAROSTOV\u00c9"
             },
             "ano": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "ANO 2011"
             },
             "spd": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "Svoboda a p\u0159\u00edm\u00e1 demokracie (SPD)"
             },
             "kscm": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "Komunistick\u00e1 strana \u010cech a Moravy"
             },
             "cssd": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "\u010cesk\u00e1 strana soci\u00e1ln\u011b demokratick\u00e1"
             },
             "prisaha": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "P\u0158\u00cdSAHA - ob\u010dansk\u00e9 hnut\u00ed Roberta \u0160lachty"
             },
             "zeleni": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "Strana zelen\u00fdch"
             },
             "tss": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "Trikolora Svobodn\u00ed Soukromn\u00edci"
             },
             "volny": {
                 "hlasy": 0,
                 "prc": 0,
-                "nazev": "SPOLU \u2013 ODS, KDU-\u010cSL, TOP 09"
+                "nazev": "VOLN\u00dd blok"
             }
         }
     },
