@@ -1,7 +1,17 @@
 <?php
 
+namespace volby21\data;
+
+require '../vendor/autoload.php';
+
+use Dotenv\Dotenv;
+
+
+$dotenv = Dotenv::createImmutable(dirname(__DIR__));
+$dotenv->load();
+
 if (isset($_GET['key'])) {
-    if ($_GET['key'] == 'HGu5gtDWtUTuWBM8FzYFFE5Yh6PnQGTGRVJDfAwSbcenLCEvnuyFKACPHbaZGEpYFUjSwP5gL8yxGxC7BWAvC2DtCuAgRNVTrS2Br2GXFsD9g3gAb5wC2yWtEaXUjsCDNNQuZ6SuTHwLMuUdqdZVq8yZPwrPK459V2XQMQgWZyd7SZEZ7bPs54LFEjTXfWVCfATwzsPu6aJavrPqGMmn7gJpVaPcE5qYg4bYxLgFrSz8J5jge44jjuu4cVHnWbMD') {
+    if ($_GET['key'] == $_ENV['KEY']) {
         //TODO security
 
         $urlCelkem = 'https://volby.cz/pls/ps2021/vysledky';
@@ -642,7 +652,6 @@ if (isset($_GET['key'])) {
         ];
 
         // Preferenční hlasy
-        $lidiSpolu = [];
         foreach ($kandidati['PS_REGKAND_ROW'] as $kandidat) {
             if ($kandidat['VOLKRAJ'] == 5) {
                 if ($kandidat['KSTRANA'] == 13) {
@@ -700,6 +709,23 @@ if (isset($_GET['key'])) {
                 }
             }
         }
+
+        //TODO procento hlasů
+        if ($hlasy['KRAJ'][4]['KANDIDATI']['KANDIDAT'] != null) {
+            foreach ($hlasy['KRAJ'][4]['KANDIDATI']['KANDIDAT'] as $kandidat2) {
+                $kandidat = $kandidat2['@attributes'];
+                if ($kandidat['KSTRANA'] == 13) {
+                    $lidiSpolu[$kandidat['PORCISLO']]['pocetHlasu'] = $kandidat['HLASY'];
+                } else if ($kandidat['KSTRANA'] == 17) {
+                    $lidiPistan[$kandidat['PORCISLO']]['pocetHlasu'] = $kandidat['HLASY'];
+                } elseif ($kandidat['KSTRANA'] == 20) {
+                    $lidiAno[$kandidat['PORCISLO']]['pocetHlasu'] = $kandidat['HLASY'];
+                } elseif ($kandidat['KSTRANA'] == 4) {
+                    $lidiSpd[$kandidat['PORCISLO']]['pocetHlasu'] = $kandidat['HLASY'];
+                }
+            }
+        }
+
 
         $save = [
             'cr' => [

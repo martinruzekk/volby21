@@ -19,6 +19,15 @@ const options = {
     }
 }
 
+const dateOptions = {
+    year: 'numeric',
+    month: 'numeric',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric'
+};
+
 let nextReload = 59
 
 var ctxCr
@@ -428,16 +437,7 @@ window.addEventListener('load', () => {
                 spdTbody.appendChild(tr)
             }
 
-            // updates
-
-            const dateOptions = {
-                year: 'numeric',
-                month: 'numeric',
-                day: 'numeric',
-                hour: 'numeric',
-                minute: 'numeric',
-                second: 'numeric'
-            };
+            // updates            
 
             let updateCr = new Date(cr['ucast']['update'])
             let crDates = document.querySelectorAll('.updateCr')
@@ -873,6 +873,36 @@ let getData = function () {
                 const kandidat = lidiSpd[i];
                 tr = tbodyPeople(kandidat)
                 spdTbody.appendChild(tr)
+            }
+
+            // updates            
+
+            let updateCr = new Date(cr['ucast']['update'])
+            let crDates = document.querySelectorAll('.updateCr')
+            for (let i = 0; i < crDates.length; i++) {
+                const e = crDates[i];
+                e.innerHTML = 'Poslední aktualizace: ' + updateCr.toLocaleDateString('cs-CZ', dateOptions)
+            }
+
+            let updateKv = new Date(okresKV['ucast']['update'])
+            let kvDates = document.querySelectorAll('.updateKv')
+            for (let i = 0; i < kvDates.length; i++) {
+                const e = kvDates[i];
+                e.innerHTML = 'Poslední aktualizace: ' + updateKv.toLocaleDateString('cs-CZ', dateOptions)
+            }
+
+            let updateSok = new Date(okresSok['ucast']['update'])
+            let sokDates = document.querySelectorAll('.updateSok')
+            for (let i = 0; i < sokDates.length; i++) {
+                const e = sokDates[i];
+                e.innerHTML = 'Poslední aktualizace: ' + updateSok.toLocaleDateString('cs-CZ', dateOptions)
+            }
+
+            let updateCheb = new Date(okresCheb['ucast']['update'])
+            let chebDates = document.querySelectorAll('.updateCh')
+            for (let i = 0; i < chebDates.length; i++) {
+                const e = chebDates[i];
+                e.innerHTML = 'Poslední aktualizace: ' + updateCheb.toLocaleDateString('cs-CZ', dateOptions)
             }
         }
     })
